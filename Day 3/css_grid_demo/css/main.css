@@ -1,0 +1,110 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+/* .area-border {
+    border: 1px solid black;
+} */
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 10vh 40vh 1fr;
+    grid-template-areas: 
+    "navbar navbar navbar navbar navbar navbar"
+    ". prof-pic  prof-info prof-info prof-info ."
+    ".posts posts posts posts ."
+    ;
+}
+
+.navbar{
+    display: flex;
+    grid-area: navbar;
+    background-color: lightblue;
+    position: sticky;
+    top: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar a{
+    color: white;
+    /* border: 2px dashed white; */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+
+
+}
+.prof-info {
+    grid-area: prof-info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 5vw;
+    
+}
+
+ul{
+    list-style-type: none;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.prof-info > h1{
+    align-self: center;
+    padding-top: 1%;
+}
+
+.prof-pic {
+    grid-area: prof-pic;
+    display: flex;
+    align-items: center;
+}
+
+#profPic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 2px dashed lightblue;
+    outline: auto white;
+    border-radius: 3px;
+}
+
+.posts {
+    grid-area: posts;
+}
+
+.contact {
+    margin-bottom: 2%;
+    /* text-align: center; */
+}
+
+.post-card{
+    border: 2px solid lightblue;
+    padding: 1em;
+    margin-top: 3%;
+    border-radius: 3px;
+}
+
+.card-links{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links > a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 4px;
+    border-radius: 3px;
+    
+}
+
+.card-links > a:hover {
+    text-decoration: underline;
+    background-color: white;
+    color: lightblue;
+    border-color: lightblue;
+}

@@ -1,0 +1,100 @@
+Kekambas-111 Week 1 - Day 3 Bootstrap & CSS Grid Brian Stanton • 9:25 AM Today we will discuss a CSS Framework called Bootstrap and the CSS Display Grid Module. We will then build a page using CSS Grid. Bootstrap and the CSS Grid https: //app.ludus.one/56481d64-2b88-4fd6-8564-9e707285159f
+
+A Complete Guide to CSS Grid | CSS-Tricks - CSS-Tricks https: //css-tricks.com/snippets/css/complete-guide-grid/
+
+Bootstrap · The most popular HTML,
+CSS,
+and JS library in the world. https: //getbootstrap.com/
+
+Bootstrap-and-the-CSS-Grid.pptx PowerPoint index.html HTML main.css Style Sheet Class comments
+/* body{
+    background-color: black;
+    color: white;
+} */
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 2fr 3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar navbar"
+        ". prof-pic prof-info prof-info prof-info ."
+        ". posts posts posts posts .";
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    align-items: center;
+    top: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.prof-pic {
+    grid-area: prof-pic;
+    display: flex;
+    align-items: center;
+}
+
+#profilePic {
+    width: 100%;
+    height: auto;
+}
+
+.prof-info {
+    grid-area: prof-info;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 5vw;
+}
+
+.prof-info h1 {
+    align-self: center;
+}
+
+.posts {
+    grid-area: posts;
+}
+
+.post-card {
+    border: 1px solid black;
+    padding: 1vh;
+    margin: 1vh 0;
+}
+
+.card-title {
+    margin: 10px 0;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-links a:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: aqua;
+}
+
+/* .container > div {
+    border: 2px solid black
+} */
+main.css Displaying main.css.
