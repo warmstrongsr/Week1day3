@@ -1,0 +1,59 @@
+* {
+    border: 1px solid white;
+    /* display: flex; */
+    flex-direction: column;
+    
+}
+
+.hero-image {
+    background-image:  url(../Images/theater-image-background.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    /* position: relative; */
+    /* background-position: 50% 55%; */
+    margin-top: -2%;
+}
+
+.hero-text {
+    font-size: 130px;
+        color: white;
+        text-align: center;
+        position: relative;
+        top: 35%;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        /* transform: translate(-50%, -50% */
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+
+}
+
+#nbhdr {
+    font-size: 40px;
+    margin-left: 100px;
+    margin-right: 250px;
+}
+
+.topnavbar {
+    /* display: flex; */
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* text-align: center; */
+    padding-left: 100px;
+
+    
+}
+
+.nvbr {
+
+}
+
